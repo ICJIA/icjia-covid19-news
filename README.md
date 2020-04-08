@@ -2,7 +2,7 @@
 
 # ICJIA News & Updates
 
-## Demo
+## Site
 
 https://icjia.illinois.gov/covid19
 
