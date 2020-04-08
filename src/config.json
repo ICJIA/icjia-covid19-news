@@ -1,0 +1,31 @@
+{
+  "clientBase": "https://icjia.illinois.gov",
+  "publicPath": "/covid19",
+  "namespace": "icjia-",
+  "siteTitle": "COVID-19 News & Updates",
+  "githubURL": "https://github.com/ICJIA/icjia-covid19-news",
+  "coronaInfoURL": "https://coronavirus.icjia-api.cloud/",
+  "siteTitleMobile": "COVID-19 News & Updates",
+  "siteDescription": "COVID-19 News & Updates",
+  "searchConfig": {
+    "shouldSort": true,
+    "includeMatches": true,
+    "tokenize": true,
+    "threshold": 0.6,
+    "location": 0,
+    "distance": 100,
+    "maxPatternLength": 32,
+    "minMatchCharLength": 2,
+    "keys": ["title", "summary", "headings.heading", "category", "type", "name"]
+  },
+  "debug": true,
+  "markdownItOptions": {
+    "html": true,
+    "xhtmlOut": false,
+    "breaks": false,
+    "langPrefix": "language-",
+    "linkify": true,
+    "typographer": false,
+    "quotes": "“”‘’"
+  }
+}
