@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a08caed8-177f-4ac8-9d1c-9fdb1edd6c0f/deploy-status)](https://app.netlify.com/sites/icjia-covid19/deploys)
+
 # ICJIA News & Updates
 
 ## Demo
