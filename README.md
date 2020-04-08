@@ -2,13 +2,13 @@
 
 ## Demo
 
-https://icjiatest.now.sh
+https://icjia.illinois.gov/covid19
 
 ## Install
 
 ```
-$ git clone https://github.com/ICJIA/icjia-updates.git
-$ cd icjia-updates
+$ git clone https://github.com/ICJIA/icjia-covid19-news.git
+$ cd icjia-covid19-news
 $ npm install
 ```
 
@@ -30,4 +30,4 @@ Publish directory: `./dist`
 
 ## License
 
-[MIT @ Illinois Criminal Justice Information Authority](https://github.com/ICJIA/r3-next/blob/master/LICENSE)
+[MIT @ Illinois Criminal Justice Information Authority](https://github.com/ICJIA/icjia-covid19-news/blob/master/LICENSE)
