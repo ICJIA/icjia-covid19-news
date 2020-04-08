@@ -1,5 +1,5 @@
 ---
-title: "Additional Resources"
+title: "Criminal Justice Resources"
 posted: "2020-04-06"
 category: "Resources"
 showToc: true
