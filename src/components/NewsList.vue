@@ -71,6 +71,22 @@
           </div>
         </ul>
       </div>
+      <h2 id="follow-us">Follow Us</h2>
+      <ul>
+        <li>
+          Follow us on <a href="https://www.facebook.com/ICJIA/">Facebook</a>,
+          <a href="">LinkedIn</a>, and
+          <a href="https://twitter.com/ICJIA_Illinois">Twitter</a>
+        </li>
+        <li>
+          <a
+            href="https://visitor.r20.constantcontact.com/manage/optin?v=001MqUcqqvjwLCJXlLMSWbTe3zHHmEQgFeBuHvBcJWTbwgrxFbDSGx4HSUPpI6DJWMUPgbljtLxffqIcGFTgCnr-auak88ybvRxpoJlTMGPtZs%3D"
+            >Subscribe</a
+          >
+          to ICJIA’s CJ Dispatch email list and get the latest research, grant
+          opportunities, and other news delivered to your inbox.
+        </li>
+      </ul>
     </v-container>
   </div>
 </template>
@@ -83,7 +99,7 @@ export default {
     return {
       newsItems: null,
       loading: true,
-      slugs
+      slugs,
     };
   },
   methods: {
@@ -92,12 +108,12 @@ export default {
     },
     closeSearch() {
       EventBus.$emit("closeSearch");
-    }
+    },
   },
 
   mounted() {
     this.loading = false;
-  }
+  },
 };
 </script>
 
