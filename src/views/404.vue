@@ -19,16 +19,16 @@ export default {
   name: "FourOhFour",
   metaInfo() {
     return {
-      title: "Error"
+      title: "Error",
     };
   },
   created() {},
   mounted() {
-    // this.$ga.page({
-    //   page: this.$route.path,
-    //   title: "Error",
-    //   location: window.location.href
-    // });
-  }
+    this.$ga.page({
+      page: this.$route.path,
+      title: "Error",
+      location: window.location.href,
+    });
+  },
 };
 </script>

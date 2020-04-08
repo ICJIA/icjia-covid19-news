@@ -11,7 +11,7 @@ status: "live"
 
 ## General
 
-- [State of Illinois COVID-19 Response Page]()
+- [State of Illinois COVID-19 Response Page](https://coronavirus.illinois.gov/s/)
 
 - COVID-19 Hotline: 1-800-889-3931
 
@@ -43,7 +43,7 @@ status: "live"
 
 - Proactive Correctional Facility protocols for COVID-19
 
-  - https://www.policeone.com/police-products/infection-control/articles/5-things-jails-prisons-can-do-to-get-ahead-of-covid-19-gv13onG80n3KUHPd/
+  - [https://www.policeone.com/police-products/infection-control/articles/5-things-jails-prisons-can-do-to-get-ahead-of-covid-19-gv13onG80n3KUHPd/](https://www.policeone.com/police-products/infection-control/articles/5-things-jails-prisons-can-do-to-get-ahead-of-covid-19-gv13onG80n3KUHPd/)
 
 - Illinois Department of Corrections Official COVID-19 Response
 

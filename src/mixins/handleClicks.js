@@ -9,12 +9,17 @@ export const handleClicks = {
     handleClicks($event) {
       // intercepts <a></a> tag clicks and routes within app
       //$event.preventDefault();
+      console.log("handle click");
       const { target } = $event;
       const href = $event.target.href;
       const mailto = /mailto/g;
       const isAFile = /^.*\.(pdf|doc|docx|xls|xlsx|zip|csv|json|txt)$/i.test(
         href
       );
+
+      if (!isAFile) {
+        return null;
+      }
 
       if (isAFile) {
         $event.preventDefault();
@@ -27,11 +32,11 @@ export const handleClicks = {
         let path = `${publicPath}${this.$route.meta.fileDownloadPath}${filename}`;
         console.log("download path: ", path);
 
-        // this.$ga.event({
-        //   eventCategory: "File",
-        //   eventAction: "Download",
-        //   eventLabel: filename
-        // });
+        this.$ga.event({
+          eventCategory: "File",
+          eventAction: "Download",
+          eventLabel: filename,
+        });
 
         location.href = path;
       } else if (
@@ -47,7 +52,7 @@ export const handleClicks = {
           metaKey,
           shiftKey,
           button,
-          defaultPrevented
+          defaultPrevented,
         } = $event;
         // don't handle with control keys
         if (metaKey || altKey || ctrlKey || shiftKey) return;
@@ -79,6 +84,6 @@ export const handleClicks = {
       } else {
         return null;
       }
-    }
-  }
+    },
+  },
 };
