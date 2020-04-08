@@ -1,5 +1,5 @@
 {
-  "name": "icjiatest",
+  "name": "icjia-covid19-news",
   "version": "0.1.0",
   "description": "ICJIA COVID-19 News & Updates",
   "author": {
@@ -7,11 +7,11 @@
     "email": "christopher.schweda@illinois.gov"
   },
   "license": "MIT",
-  "homepage": "https://icjia.illinois.gov/updates",
+  "homepage": "https://icjia.illinois.gov/covid19",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/ICJIA/icjia-updates"
+    "url": "https://github.com/ICJIA/icjia-covid19-news"
   },
   "scripts": {
     "serve": "node generateRoutes && node generateSitemap && node generateSearchIndex && vue-cli-service serve",
