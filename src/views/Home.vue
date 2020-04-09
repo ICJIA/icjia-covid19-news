@@ -30,13 +30,13 @@ export default {
   components: {
     HomePageContent: {
       extends: fm.vue.component,
-      components: {},
-    },
+      components: {}
+    }
   },
   mixins: [handleClicks, generateToc],
   metaInfo() {
     return {
-      title: this.$myApp.config.siteTitle,
+      title: this.$myApp.config.siteTitle
     };
   },
   data() {
@@ -44,7 +44,7 @@ export default {
       title: fm.attributes.title,
       loading: true,
       fm,
-      cards: null,
+      cards: null
     };
   },
   computed: {
@@ -54,15 +54,15 @@ export default {
       } else {
         return true;
       }
-    },
+    }
   },
   mounted() {
     this.$ga.page({
       page: this.$route.path,
       title: this.title,
-      location: window.location.href,
+      location: window.location.href
     });
-    let cards = this.$myApp.siteMeta.filter((item) => {
+    let cards = this.$myApp.siteMeta.filter(item => {
       if (item.attributes.showAsCard) {
         return item;
       }
@@ -96,8 +96,8 @@ export default {
     },
     slugify(str) {
       return slugs(str);
-    },
-  },
+    }
+  }
 };
 </script>
 

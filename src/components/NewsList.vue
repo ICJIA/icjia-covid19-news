@@ -73,12 +73,12 @@
       </div>
       <h2 id="follow-us">Follow Us</h2>
       <ul>
-        <li class="news-list">
+        <li style="margin-left: 5px;">
           Follow us on <a href="https://www.facebook.com/ICJIA/">Facebook</a>,
           <a href="">LinkedIn</a>, and
           <a href="https://twitter.com/ICJIA_Illinois">Twitter</a>
         </li>
-        <li class="news-list">
+        <li style="margin-left: 5px;">
           <a
             href="https://visitor.r20.constantcontact.com/manage/optin?v=001MqUcqqvjwLCJXlLMSWbTe3zHHmEQgFeBuHvBcJWTbwgrxFbDSGx4HSUPpI6DJWMUPgbljtLxffqIcGFTgCnr-auak88ybvRxpoJlTMGPtZs%3D"
             >Subscribe</a

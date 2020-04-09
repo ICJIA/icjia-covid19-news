@@ -19,7 +19,7 @@ export default {
   name: "FourOhFour",
   metaInfo() {
     return {
-      title: "Error",
+      title: "Error"
     };
   },
   created() {},
@@ -27,8 +27,8 @@ export default {
     this.$ga.page({
       page: this.$route.path,
       title: "Error",
-      location: window.location.href,
+      location: window.location.href
     });
-  },
+  }
 };
 </script>

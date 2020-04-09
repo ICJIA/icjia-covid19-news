@@ -17,7 +17,13 @@ export const handleClicks = {
         href
       );
 
-      if (!isAFile) {
+      if (
+        target &&
+        target.matches(".dynamic-content a([href*='://'])") &&
+        target.href &&
+        isAFile
+      ) {
+        // is a link to external file
         return null;
       }
 
