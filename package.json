@@ -19,7 +19,6 @@
     "test:unit": "vue-cli-service test:unit",
     "scripts": "node generateRoutes && node generateSitemap && node generateSearchIndex",
     "lint": "vue-cli-service lint",
-    "lint:fix": "npm run lint -- --fix",
     "deploy:prod": "now --prod",
     "postbuild": "node generateBuildInfo.js",
     "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md"

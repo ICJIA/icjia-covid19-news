@@ -41,7 +41,7 @@ export const handleClicks = {
         this.$ga.event({
           eventCategory: "File",
           eventAction: "Download",
-          eventLabel: filename,
+          eventLabel: filename
         });
 
         location.href = path;
@@ -58,7 +58,7 @@ export const handleClicks = {
           metaKey,
           shiftKey,
           button,
-          defaultPrevented,
+          defaultPrevented
         } = $event;
         // don't handle with control keys
         if (metaKey || altKey || ctrlKey || shiftKey) return;
@@ -90,6 +90,6 @@ export const handleClicks = {
       } else {
         return null;
       }
-    },
-  },
+    }
+  }
 };

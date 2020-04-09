@@ -99,7 +99,7 @@ export default {
     return {
       newsItems: null,
       loading: true,
-      slugs,
+      slugs
     };
   },
   methods: {
@@ -108,12 +108,12 @@ export default {
     },
     closeSearch() {
       EventBus.$emit("closeSearch");
-    },
+    }
   },
 
   mounted() {
     this.loading = false;
-  },
+  }
 };
 </script>
 
