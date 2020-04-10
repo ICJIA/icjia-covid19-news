@@ -3,7 +3,7 @@ title: "Criminal Justice Resources"
 posted: "2020-04-06"
 category: "Resources"
 showToc: true
-summary: "Links to various websites with additional COVID-19 information"
+summary: "Links to websites with additional COVID-19 information"
 displaySummaryOnHome: true
 showInSitemap: true
 status: "live"
