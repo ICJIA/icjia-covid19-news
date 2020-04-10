@@ -1,5 +1,5 @@
 ---
-title: "OFM COVID-19 Update"
+title: "Office of Fiscal Management COVID-19 Update"
 posted: "2020-04-10"
 category: "Fiscal Management"
 showToc: true
