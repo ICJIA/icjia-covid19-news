@@ -18,6 +18,7 @@
               class="news-list"
             >
               <a
+                @click="registerEvent(item.attributes.file)"
                 :href="
                   `${$myApp.computedPublicPath}/downloads/${item.attributes.file}`
                 "
@@ -108,6 +109,14 @@ export default {
     },
     closeSearch() {
       EventBus.$emit("closeSearch");
+    },
+    registerEvent(file) {
+      console.log("register event:", file);
+      this.$ga.event({
+        eventCategory: "File",
+        eventAction: "Download",
+        eventLabel: file
+      });
     }
   },
 
