@@ -37,11 +37,26 @@ let news = siteMeta.filter(item => {
   }
 });
 
-news = _.sortBy(news, function(dateObj) {
-  return new Date(dateObj.attributes.posted);
-}).reverse();
+// news = _.sortBy(news, "attributes.title");
 
-//console.log(news);
+// news = _.sortBy(news, [
+
+// ]).reverse();
+
+news = _.orderBy(
+  news,
+  [
+    function(dateObj) {
+      return new Date(dateObj.attributes.posted);
+    },
+    function(item) {
+      return item.attributes.title;
+    }
+  ],
+  ["desc", "asc"]
+);
+
+console.log(news);
 
 let myApp = {
   config,

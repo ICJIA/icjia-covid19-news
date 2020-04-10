@@ -32,7 +32,7 @@ export const generateToc = {
 
         return obj;
       });
-      console.log(tableOfContents);
+      // console.log(tableOfContents);
       this.toc = tableOfContents;
       return this.toc;
     }
