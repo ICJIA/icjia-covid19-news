@@ -9,17 +9,17 @@ const manualRoutes = [
 
     component: () => import(/* webpackChunkName: "404" */ "../views/404.vue")
   },
-  // {
-  //   path: "/sandbox",
-  //   name: "sandbox",
-  //   meta: {
-  //     title: "sandbox",
-  //     showInSitemap: false
-  //   },
+  {
+    path: "/search",
+    name: "search",
+    meta: {
+      title: "search",
+      showInSitemap: true
+    },
 
-  //   component: () =>
-  //     import(/* webpackChunkName: "sandbox" */ "../views/Sandbox.vue")
-  // },
+    component: () =>
+      import(/* webpackChunkName: "sandbox" */ "../views/Search.vue")
+  },
   {
     path: "/home",
     name: "altHome",
