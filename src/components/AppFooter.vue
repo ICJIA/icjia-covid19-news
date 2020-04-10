@@ -50,7 +50,16 @@
               target="_blank"
               class="footer-link"
               rel="noreferrer"
-              >ICJIA Document Archive</a
+              >Document Archive</a
+            > </strong
+          >&nbsp;|&nbsp;
+          <strong>
+            <a
+              href="https://icjia.illinois.gov/covid19"
+              target="_blank"
+              class="footer-link"
+              rel="noreferrer"
+              >COVID-19 Response</a
             > </strong
           >&nbsp;|&nbsp;
           <strong>
@@ -59,7 +68,7 @@
               target="_blank"
               class="footer-link"
               rel="noreferrer"
-              >Site Status</a
+              >Status</a
             >
           </strong>
           &nbsp;|&nbsp;
