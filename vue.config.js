@@ -10,36 +10,36 @@ module.exports = {
   publicPath:
     process.env.NODE_ENV === `production` ? appConfig.publicPath : "/",
   //publicPath: "/",
-  configureWebpack: (config) => {
+  configureWebpack: config => {
     config.entry.app = "./src/entry.js";
   },
   transpileDependencies: ["vuetify"],
   pluginOptions: {
     moment: {
-      locales: ["en"],
-    },
+      locales: ["en"]
+    }
   },
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     config.module
       .rule("markdown")
       .test(/\.md$/)
       .use(path.resolve("./lib/frontmatter-markdown-loader"))
       .loader(path.resolve("./lib/frontmatter-markdown-loader"))
       // eslint-disable-next-line no-unused-vars
-      .tap((options) => {
+      .tap(options => {
         return {
           mode: [Mode.VUE_COMPONENT],
           publicPath:
             process.env.NODE_ENV === `production` ? appConfig.publicPath : "/",
           vue: {
-            root: "markdown-body",
+            root: "markdown-body"
           },
           markdownIt: markdownIt(appConfig.markdownItOptions)
             .use(markdownItNamedHeaders, {
-              namespace: `${appConfig.namespace}`,
+              namespace: `${appConfig.namespace}`
             })
-            .use(markdownItAttrs),
+            .use(markdownItAttrs)
         };
       });
-  },
+  }
 };
