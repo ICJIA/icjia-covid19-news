@@ -27,6 +27,10 @@
                 <v-icon class="ml-2" small color="blue darken-2"
                   >cloud_download</v-icon
                 ></a
+              ><span v-if="isItNew(item)">
+                <v-chip class="ma-2" dark x-small color="green">
+                  NEW!
+                </v-chip></span
               >
               <ul class="summary" v-if="item.attributes.displaySummaryOnHome">
                 <li>{{ item.attributes.summary }}</li>
@@ -95,6 +99,7 @@
 <script>
 import { EventBus } from "@/event-bus";
 import slugs from "slugs";
+import moment from "moment";
 export default {
   data() {
     return {
@@ -104,6 +109,17 @@ export default {
     };
   },
   methods: {
+    isItNew(item) {
+      let now = moment(new Date()); //todays date
+      let end = moment(item.attributes.posted); // another date
+      let duration = moment.duration(now.diff(end));
+      let days = duration.asDays();
+      if (days <= 2) {
+        return true;
+      } else {
+        return false;
+      }
+    },
     slugify(str) {
       return slugs("icjia-" + str);
     },
