@@ -22,15 +22,15 @@
                 :href="
                   `${$myApp.computedPublicPath}/downloads/${item.attributes.file}`
                 "
+                ><span v-if="isItNew(item)">
+                  <v-chip dark class="ma-2" x-small color="green">
+                    NEW!
+                  </v-chip></span
                 >{{ item.attributes.posted | dateFormat }} -
                 {{ item.attributes.title }}
                 <v-icon class="ml-2" small color="blue darken-2"
                   >cloud_download</v-icon
                 ></a
-              ><span v-if="isItNew(item)">
-                <v-chip class="ma-2" dark x-small color="green">
-                  NEW!
-                </v-chip></span
               >
               <ul class="summary" v-if="item.attributes.displaySummaryOnHome">
                 <li>{{ item.attributes.summary }}</li>
