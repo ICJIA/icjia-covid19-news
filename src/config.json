@@ -1,6 +1,6 @@
 {
   "clientBase": "https://icjia.illinois.gov",
-  "publicPath": "",
+  "publicPath": "/covid19",
   "namespace": "icjia-",
   "siteTitle": "COVID-19 Response",
   "githubURL": "https://github.com/ICJIA/icjia-covid19-news",
