@@ -36,6 +36,6 @@ Email: cristin.evans@illinois.gov
 
 ## Website
 
-Christopher Schweda, Lead Web Developer
+Christopher Schweda, Web Developer
 
 Email: christopher.schweda@illinois.gov
