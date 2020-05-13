@@ -24,3 +24,7 @@ yarn-error.log*
 package-lock.json
 
 .now
+
+public/sitemap.xml
+public/searchIndex.json
+src/router/markdownRoutes.json
