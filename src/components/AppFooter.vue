@@ -82,6 +82,9 @@
             >
           </strong>
         </div>
+        <div class="text-center mt-3">
+          <div id="google_translate_element"></div>
+        </div>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -129,5 +132,10 @@ export default {
 
 .footer-link:hover {
   color: #aaa !important;
+}
+.goog-te-combo {
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
 }
 </style>
