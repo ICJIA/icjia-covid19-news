@@ -134,8 +134,13 @@ export default {
   color: #aaa !important;
 }
 .goog-te-combo {
+  background: #aaa;
   color: #fff;
   border: 1px solid #ccc;
   padding: 5px;
+}
+
+.goog-te-banner-frame {
+  top: 90px !important;
 }
 </style>
